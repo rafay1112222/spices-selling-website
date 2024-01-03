@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>FLAVORS</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="js/bootstrap.min.js">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <style>
+        /* <nav> */
+
+        .container-fluid {
+            margin-left: 0px;
+            background-color: rgb(255, 254, 254);
+            background-color: #000000 1PX;
+
+        }
+
+        .nav-item {
+            padding: 20px;
+            margin-top: 10px;
+
+
+        }
+
+        .nav-item a {
+            color: #000000;
+            text-decoration: none;
+            padding-top: 30px;
+            font-family: "Poppins", Sans-serif;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+
+        .nav-item a:hover {
+            color: rgb(255, 128, 78);
+            background-color: rgb(255, 255, 255);
+        }
+
+        .dropdown-item {
+            background-color: rgb(255, 253, 253);
+
+        }
+
+        .icons i:hover {
+            color: rgb(255, 62, 3);
+        }
+
+        .bold {
+            font-family: cursive;
+            font-size: 25px;
+
+        }
+
+        /* <nav end > */
+        /* <footer> */
+        .border-color {
+            border-top: #dbdbdb 3px solid;
+        }
+
+        .site-footer {
+            background-color: #ffffff;
+            padding: 45px 0 20px;
+            font-size: 15px;
+            line-height: 24px;
+            color: #020202;
+            border-color: #ff8a1c;
+            border-radius: 3px;
+            max-width: 100%;
+
+        }
+
+        .site-footer hr {
+            border-top-color: #0a0a0a;
+            opacity: 1
+        }
+
+        .site-footer hr.small {
+            margin: 20px 0
+        }
+
+        .site-footer h6 {
+            color: #000000;
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-top: 4px;
+            letter-spacing: 2px
+        }
+
+        .site-footer a {
+            color: #050505;
+        }
+
+        .site-footer a:hover {
+            color: #ff8a1c;
+            text-decoration: none;
+        }
+
+        .footer-links {
+            padding-left: 0;
+            list-style: none
+        }
+
+        .footer-links li {
+            display: block
+        }
+
+        .footer-links a {
+            color: #000000
+        }
+
+        .footer-links a:active,
+        .footer-links a:focus,
+        .footer-links a:hover {
+            color: #fa7a31;
+            text-decoration: none;
+        }
+
+        .footer-links.inline li {
+            display: inline-block
+        }
+
+        .site-footer .social-icons {
+            text-align: right
+        }
+
+        .site-footer .social-icons a {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: 6px;
+            margin-right: 0;
+            border-radius: 100%;
+            background-color: #33353d
+        }
+
+        .copyright-text {
+            margin: 0
+        }
+
+        @media (max-width:991px) {
+            .site-footer [class^=col-] {
+                margin-bottom: 30px
+            }
+        }
+
+        @media (max-width:767px) {
+            .site-footer {
+                padding-bottom: 0
+            }
+
+            .site-footer .copyright-text,
+            .site-footer .social-icons {
+                text-align: center
+            }
+        }
+
+        .social-icons {
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin-bottom: 4px
+        }
+
+        .social-icons li.title {
+            margin-right: 15px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 13px
+        }
+
+        .social-icons a {
+            background-color: #eceeef;
+            color: #ffffff;
+            font-size: 16px;
+            display: inline-block;
+            line-height: 44px;
+            width: 44px;
+            height: 44px;
+            text-align: center;
+            margin-right: 8px;
+            border-radius: 100%;
+            -webkit-transition: all .2s linear;
+            -o-transition: all .2s linear;
+            transition: all .2s linear
+        }
+
+        .social-icons a:active,
+        .social-icons a:focus,
+        .social-icons a:hover {
+            color: #fff;
+            background-color: #29aafe
+        }
+
+        .social-icons.size-sm a {
+            line-height: 34px;
+            height: 34px;
+            width: 34px;
+            font-size: 14px
+        }
+
+        .social-icons a.facebook:hover {
+            background-color: #3b5998
+        }
+
+        .social-icons a.twitter:hover {
+            background-color: #00aced
+        }
+
+        .social-icons a.whatsapp:hover {
+            background-color: #10e032
+        }
+
+        .social-icons a.youtube:hover {
+            background-color: #ee0f0f
+        }
+
+        .logo {
+
+            height: 200px;
+            width: 300px;
+        }
+
+        @media (max-width:767px) {
+            .social-icons li.title {
+                display: block;
+                margin-right: 0;
+                font-weight: 600
+            }
+        }
+
+
+
+
+
+        /* < footer end > */
+
+        /* <home page> */
+
+        h2 {
+            color: #000;
+            font-size: 26px;
+            font-weight: 300;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            margin: 30px 0 60px;
+        }
+
+        h2::after {
+            content: "";
+            width: 200px;
+            position: absolute;
+            margin: 0 auto;
+            height: 4px;
+            border-radius: 1px;
+            background: #f8a602;
+            left: 0;
+            right: 0;
+            bottom: -20px;
+            width: 100%;
+        }
+
+
+        .video video {
+            width: 100%;
+            height: 40%;
+        }
+
+
+        .firsth5 {
+            color: orangered;
+        }
+
+        .first {
+            font-size: 80px;
+            font-family: cursive;
+
+        }
+
+        .btn1 {
+            background-color: orangered;
+            color: white;
+            border-radius: 25px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 20px;
+            border: 2px solid orangered
+        }
+
+        .btn2 {
+            background-color: orangered;
+            color: white;
+            font-size: 20px;
+            border: 2px solid orangered;
+            text-decoration: none;
+            border-radius: 20px;
+            padding: 5px;
+        }
+
+        .firstpra {
+            font-size: 20px;
+
+        }
+
+        .BannerCard {
+            display: flex;
+            padding-left: 10px;
+            flex-direction: column;
+            height: 100%;
+
+        }
+
+        .Bannertext {
+            display: flex;
+            padding-left: 10px;
+            flex-direction: column;
+            height: 100%;
+
+        }
+
+        .secondspan {
+            font-size: 20px;
+            color: orangered
+        }
+
+        .second {
+            font-size: 70px;
+            font-family: cursive;
+            padding-left: 10px;
+        }
+
+        .bbq {
+            justify-content: center;
+            text-align: center;
+            font-size: 20px;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .bbq1 {
+            justify-content: center;
+            text-align: center;
+            font-size: 25px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .price {
+            display: flex;
+            color: orangered;
+            font-size: 20px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .team {
+            display: flex;
+            color: orangered;
+            font-size: 50px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hello {
+            display: flex;
+            font-size: 20px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .sami {
+            width: 100%;
+            height: 350px;
+        }
+
+        .btnPink {
+            background-color: #e2225b;
+            color: white;
+            border-radius: 20px;
+            box-shadow: 6px 6px 14px #e2225b63;
+            padding: 8px 44px;
+            letter-spacing: 1px;
+
+        }
+
+        .PinkTxt {
+            color: #ae4268;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+
+
+        .flex {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-left: 300;
+            margin-top: 300;
+            border: 2px rgb(223, 150, 16);
+        }
+
+        .bannervideo {
+            height: 400px;
+            width: 650px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .bannerImg {
+            height: 300px;
+            width: 600px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .carding {
+            height: 300px;
+            width: 355px;
+
+
+        }
+
+        .container {
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        .third {
+            color: orangered;
+            font-family: cursive;
+            padding-left: 10px;
+        }
+
+
+
+        .card {
+            background-color: none;
+
+        }
+
+        .main1 {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .whyus {
+            width: 450px;
+            height: 250px;
+            justify-content: center;
+            text-align: center;
+            padding-left: 10px;
+        }
+
+        .new {
+            font-size: 40px;
+            justify-content: center;
+            text-align: center;
+            font-family: cursive;
+
+
+            width: 200px;
+
+            margin: 0 auto;
+
+            border-radius: 1px;
+            background: #fdfcfb;
+            left: 0;
+            right: 0;
+
+        }
+
+        .newh1 {
+            color: orangered;
+        }
+
+        .end {
+
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .ending {
+
+            display: flex;
+            text-align: center;
+            justify-content: center;
+
+
+        }
+
+        .spancolor {
+            color: orangered;
+        }
+
+        .endheading {
+            font-family: cursive;
+        }
+
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+
+
+        header p {
+            padding: 50px;
+            text-align: center;
+            color: #bebebe;
+            text-transform: uppercase;
+            font-size: 65px;
+            font-weight: 700;
+        }
+
+
+        /* .center */
+        .ccenter1 {
+            text-align: start;
+            justify-content: left;
+            margin-left: 300px;
+        }
+
+        .body {
+            width: 100%;
+        }
+        .thumb-content .btn:hover {
+            color: #fff;
+            background: hsl(29, 100%, 52%);
+            box-shadow: none;
+        }
+
+        .thumb-content {
+            font-size: 14px;
+            
+            margin-left: 5px;
+        }
+
+        .spk-info {
+            text-align: center;
+            padding: 30px 0;
+            border-top: rgb(219, 216, 216) 0.1px solid;
+        }
+
+        .spk-info h3 {
+            color: #252525;
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 5px;
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            transition: all 0.4s;
+            text-transform: capitalize;
+
+        }
+
+       .spk-info h3:hover {
+            color: #ff8615;
+        }
+
+        
+
+
+        /* <home page end> */
+    </style>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/Black Elegant Hand Teahouse Logo.jpg" href="index.html" class="img-fluid"
+                height="90PX" width="120PX">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" class="btn btn-light"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div>
+
+                       
+                        <link rel="" href="index.html">
+                    </div>
+                        <li class="nav-item">
+                            <a href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"></a>
+                        </li>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a href="index.html"> <b>Home </b></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="gallery.html"> <b>Gallery</b></a>
+                            </li>
+
+
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <b>Catagories</b>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <center>
+                                        <li> <a class="dropdown-item" href="bestseller.html"><b>Best Seller</b></a></li>
+                                        <li> <a class="dropdown-item" href="HotDeals.html"><b>Hot Deals</b></a></li>
+                                        <li><a class="dropdown-item" href="regularspice.html"><b>Regular Spices</b></a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="newarrival.html"><b>New Arrivals</b></a></li>
+                                    </center>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Aboutus.HTML"><b>About Us</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contactus.html"><b>Contact Us</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"><b></b> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"><b></b> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"><b></b> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="login.html">login</a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- <a href="#"><i class="fa fa-shopping-cart" style='font-size:24px'></i></a> -->
+                            </li>
+
+
+
+                            </form>
+                    </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid1 container-fluid">
+
+        <div class="video-wrapper">
+            <div class="video">
+                <video playsinline autoplay muted loop poster="cake.jpg">
+                    <source src="img/animation video.mp4" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <br>
+        <br>
+        
+
+        <div class="body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="BannerCard" style="padding: 40px";>
+
+                        <h5 class="firsth5"><b> All Spice Sets are here </b></h5>
+                        <br>
+                        <h1 class="first">
+                            Black Pepper & Chile Powder
+                        </h1>
+                        <br>
+                        <p class="firstpra"><b> For the most part, chefs use the terms "spices and herbs"
+                                interchangeably, but
+                                there
+                                are differences. Spices that. </b></p>
+                        <div>
+                            <div class="thumb-content">
+                                <a href="regularspice.html" class="btn2">See more</a>
+                            </div>
+                            <center>
+                               
+                                
+                                    
+                               
+                               
+                            </center>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-6">
+                    <div>
+                        <img src="./img/first.jpg" class="bannervideo" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div>
+                        <img src="./img/second.jpg" class="bannerImg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="Bannertext">
+                        <span class="secondspan"><b> About Us </b></span>
+                        <br>
+                        <h3 class="second">Red Rocks Hickory Smoke Seasoning</h3>
+                        <br>
+                        <p class="secondpra"><b> The American Spice Company sells herbs made from . Both fresh and dried
+                                leaves,<br>
+                                while many of our spices curate from seeds, bark, fruit, flowers, and roots. </b></p>
+                                <div class="thumb-content">
+                                    <a href="Aboutus.HTML" class="btn2">See more</a>
+                                </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <br>
+            <br>
+            
+            <Br></Br>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="Bannerwhy"  style="padding-left: 40px">
+
+
+                        <h1 class="third" style="padding-left: 40px">Why Us</h1>
+                        <br>
+                        <p><b>
+                                Step into our Great American <b>Spice store </b> and <br>It began with the pureley
+                                functional
+                                need for a<br>
+                                controlls environment to moderate the effects of climate.<br> <b>Spice store </b>
+                                shelters were one
+                                means by
+                                which human beings<br>
+                                were ableto adapt
+                            </b> </p>
+                        <br>
+                        <ul>
+                            <li>
+                                <i class="fa fa-check-circle" style="font-size:24px ;color:orangered"></i>
+
+                                <b>Cardamom Pods Black </b>
+                            </li>
+                            <li>
+                                <i class="fa fa-check-circle" style="font-size:24px ;color:orangered"></i>
+                                <span> <b>Black Pepper Shaker </b></span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check-circle" style="font-size:24px ;color:orangered"></i>
+                                <span><b>Cinnamon 2% Oil Ground </b></span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-2">
+
+                    <img src="./img/no.jpg" class="whyus" alt="" srcset=""  style="padding-left: 40px">
+
+                    <div>
+                        <br>
+                        <p><b>
+                                Step into our Great American Spice store and . It began with the pureley functional<br>
+                                need for a controlls
+                                environment to moderate the effects of climate.
+                            </b></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <br>
+            <br>
+            
+
+
+            <h1 class="new"><b> Our<span class="newh1"> Categ</span>ory</b> </h1>
+            <br><br>
+            <div class="row ">
+                <div class="col-lg-3  col-md-3  col-sm-12">
+                    <div>
+                        <img src="./img/4.jpg" alt="" srcset="">
+                        <h5 class="bbq"> Garlic & Onion</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-3  col-md-3  col-sm-12">
+                    <div>
+                        <img src="./img/3.jpg" alt="" srcset="">
+
+                        <h5 class="bbq">BBQ & Grilling </h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-3  col-md-3  col-sm-12">
+
+                    <div>
+                        <img src="./img/2.jpg" alt="" srcset="">
+                        <h5 class="bbq"> Chiles & Paprika</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-3  col-md-3  col-sm-12">
+                    <div>
+                        <img src="./img/1.jpg" alt="" srcset="">
+                        <h5 class="bbq">Salt & Pepper </h5>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            
+
+
+            <h1 class="new"> <b> Our<span class="newh1"> produ</span>cts </b></h1>
+            <br>
+            <div class="row " style="padding-left: 30px;">
+                <div class="col-lg-3  col-md-4  col-sm-12">
+                    <div>
+                        <img src="./img/5.jpg" class="sami" alt="" srcset="">
+                        <h5 class="bbq1">Chicory Root </h5>
+                        <h5 class="price">25$</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-4  col-md-4  col-sm-12">
+                    <div>
+                        <img src="./img/6.jpg" class="sami" alt="" srcset="">
+                        <h5 class="bbq1">Anise Seed </h5>
+                        <h5 class="price">22$</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-4  col-md-4  col-sm-12">
+
+                    <div>
+                        <img src="./img/7.jpg" class="sami" alt="" srcset="">
+                        <h5 class="bbq1">Cardamom Pods </h5>
+                        <h5 class="price">29$</h5>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            
+            <h1 class="new"><b> Fun<span class="newh1"> Fa</span>cts </b> </h1>
+            <br>
+            <br>
+            <br>
+            <div class="row ">
+                <div class="col-lg-4  col-md-4  col-sm-12">
+                    <div>
+                        <h5 class="team"> 25+ </h5>
+                        <p class="hello">Selling Per Day </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4  col-md-4  col-sm-12">
+                    <div>
+                        <h5 class="team">58+ </h5>
+                        <p class="hello">Years Practical Experience </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4  col-md-4  col-sm-12">
+                    <div>
+                        <h5 class="team">96+ </h5>
+                        <p class="hello">Awesome Team Members </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <br>
+           
+            <Br></Br>
+            <h1 class="new">New<span class="newh1"> produ</span>cts</h1>
+            <br>
+            <br>
+            <div class="container">
+                <div class="row main1">
+                    <div class="col-lg-3  col-md-6  col-sm-12">
+                        <div class="card">
+                            <div class="image">
+                                <img src="img/1.jpg" class="card-img-top carding " alt="...">
+                            </div>
+                            <div class="card-body card-main">
+                                <h5 class="card-title">Black pepper</h5>
+                                <h5 class="price">12$</h5>
+                                <br>
+                                <div class="thumb-content">
+                                    <a href="newarrival.html" class="btn2">Show more</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class=" col-lg-3  col-md-6  col-sm-12">
+                        <div class="card">
+                            <div class="image">
+                                <img src="./img/2.jpg" class="card-img-top carding " alt="...">
+                            </div>
+                            <div class="card-body card-main">
+                                <h5 class="card-title">Red chilli</h5>
+                                <h5 class="price">18$</h5>
+                                <br>
+                                <div class="thumb-content">
+                                    <a href="newarrival.html" class="btn2">Show more</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class=" col-lg-3 col-md-6  col-sm-12">
+                        <div class="card">
+                            <div class="image">
+                                <img src="./img/3.jpg" class="card-img-top carding " alt="...">
+                            </div>
+
+                            <div class="card-body card-main">
+                                <h5 class="card-title">Beans</h5>
+                                <h5 class="price">21$</h5>
+                                <br>
+                                <div class="thumb-content">
+                                    <a href="newarrival.html" class="btn2">Show more</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3  col-md-6  col-sm-12">
+                        <div class="card">
+                            <div class="image">
+                                <img src="./img/5.jpg" class="card-img-top carding " alt="...">
+                            </div>
+                            <div class="card-body card-main">
+                                <h5 class="card-title">White pepper</h5>
+                                <h5 class="price">29$</h5>
+                                <br>
+                                <div>
+                                   
+
+                                    <div class="thumb-content">
+                                        <a href="newarrival.html" class="btn2">Show more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="end">
+                        <div class="endheading">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            
+
+                            <h1>You Provide <span class="spancolor"> The Time, </span>We</h1>
+                            <h1>Provide The Taste.</h1>
+                        </div>
+                        <br>
+                        <p><b>For the most part, chefs use the terms "spices and herbs" interchangeably,
+                                <br> but there are differences. Spices that.</b> </p>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    
+
+                    <div class="ending">
+                        <img src="./img/last.jpg" alt="" srcset="">
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+    <br>
+   
+    <!-- Site footer -->
+    <div class="border-color">
+        <footer class="site-footer">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h6>Logo</h6>
+                        <p>
+
+                            <img src="img/Black Elegant Hand Teahouse Logo.jpg" class="logo" alt="">
+                        </p>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Categories</h6>
+                        <ul class="footer-links">
+                            <li><a href="regularspice.html">Regular spices</a></li>
+                            <li><a href="HotDeals.html">Hot deals</a></li>
+                            <li><a href="bestseller.html">Best seller</a></li>
+                            <li><a href="newarrival.html">New arrivals</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="index.html"> Home</a></li>
+                            <li><a href="Aboutus.HTML">About Us</a></li>
+                            <li><a href="contactus.html">Contact Us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href=""> </a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                            <a href="index.html">Flavours</a>.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="whatsapp" href="https://www.whatsapp.com/"><i class="fa fa-whatsapp"></i></a></li>
+                            <li><a class="youtube" href="https://www.youtube.com/@partnervlog4217"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    </footer>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

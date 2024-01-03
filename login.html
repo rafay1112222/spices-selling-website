@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>login</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/opensans-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/line-awesome/css/line-awesome.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="js/bootstrap.min.js">
+	<!-- Jquery -->
+	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+	/* <nav> */
+  
+		.container-fluid {
+        margin-left: 0px;
+        background-color: rgb(255, 254, 254);
+        background-color: #000000 1PX;
+
+    }
+
+    .nav-item {
+        padding: 20px;
+        margin-top: 10px;
+
+
+    }
+
+    .nav-item a {
+        color: #000000;
+        text-decoration: none;
+        padding-top: 30px;
+        font-family: "Poppins", Sans-serif;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    .nav-item a:hover {
+        color: rgb(255, 128, 78);
+        background-color: rgb(255, 255, 255);
+    }
+
+    .dropdown-item {
+        background-color: rgb(255, 253, 253);
+
+    }
+
+    .icons i:hover {
+        color: rgb(255, 62, 3);
+    }
+
+    .bold {
+        font-family: cursive;
+        font-size: 25px;
+
+    }
+
+    /* <nav end > */
+    /* <footer> */
+    .border-color {
+        border-top: #dbdbdb 3px solid;
+    }
+
+    .site-footer {
+        background-color: #ffffff;
+        padding: 45px 0 20px;
+        font-size: 15px;
+        line-height: 24px;
+        color: #020202;
+        border-color: #ff8a1c;
+        border-radius: 3px;
+        max-width: 100%;
+
+    }
+
+    .site-footer hr {
+        border-top-color: #0a0a0a;
+        opacity: 1
+    }
+
+    .site-footer hr.small {
+        margin: 20px 0
+    }
+
+    .site-footer h6 {
+        color: #000000;
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-top: 4px;
+        letter-spacing: 2px
+    }
+
+    .site-footer a {
+        color: #050505;
+    }
+
+    .site-footer a:hover {
+        color: #ff8a1c;
+        text-decoration: none;
+    }
+
+    .footer-links {
+        padding-left: 0;
+        list-style: none
+    }
+
+    .footer-links li {
+        display: block
+    }
+
+    .footer-links a {
+        color: #000000
+    }
+
+    .footer-links a:active,
+    .footer-links a:focus,
+    .footer-links a:hover {
+        color: #fa7a31;
+        text-decoration: none;
+    }
+
+    .footer-links.inline li {
+        display: inline-block
+    }
+
+    .site-footer .social-icons {
+        text-align: right
+    }
+
+    .site-footer .social-icons a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 6px;
+        margin-right: 0;
+        border-radius: 100%;
+        background-color: #33353d
+    }
+
+    .copyright-text {
+        margin: 0
+    }
+
+    @media (max-width:991px) {
+        .site-footer [class^=col-] {
+            margin-bottom: 30px
+        }
+    }
+
+    @media (max-width:767px) {
+        .site-footer {
+            padding-bottom: 0
+        }
+
+        .site-footer .copyright-text,
+        .site-footer .social-icons {
+            text-align: center
+        }
+    }
+
+    .social-icons {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none
+    }
+
+    .social-icons li {
+        display: inline-block;
+        margin-bottom: 4px
+    }
+
+    .social-icons li.title {
+        margin-right: 15px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 13px
+    }
+
+    .social-icons a {
+        background-color: #eceeef;
+        color: #ffffff;
+        font-size: 16px;
+        display: inline-block;
+        line-height: 44px;
+        width: 44px;
+        height: 44px;
+        text-align: center;
+        margin-right: 8px;
+        border-radius: 100%;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear
+    }
+
+    .social-icons a:active,
+    .social-icons a:focus,
+    .social-icons a:hover {
+        color: #fff;
+        background-color: #29aafe
+    }
+
+    .social-icons.size-sm a {
+        line-height: 34px;
+        height: 34px;
+        width: 34px;
+        font-size: 14px
+    }
+
+    .social-icons a.facebook:hover {
+        background-color: #3b5998
+    }
+
+    .social-icons a.twitter:hover {
+        background-color: #00aced
+    }
+
+    .social-icons a.whatsapp:hover {
+        background-color: #10e032
+    }
+
+    .social-icons a.youtube:hover {
+        background-color: #ee0f0f
+    }
+    .logo{
+        
+        height: 200px;
+        width: 300px;
+    }
+
+    @media (max-width:767px) {
+        .social-icons li.title {
+            display: block;
+            margin-right: 0;
+            font-weight: 600
+        }
+    }
+
+
+
+
+
+    /* < footer end > */
+</style>
+
+
+<body class="form-v7">
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html">
+                <img src="img/Black Elegant Hand Teahouse Logo.jpg" class="img-fluid" height="90PX" width="120PX">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" class="btn btn-light"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					
+					
+					<li class="nav-item">
+						<a href="#"></a>
+					</li>
+					<li class="nav-item">
+						<a href="#"></a>
+					</li>
+					<li class="nav-item">
+						<a href="#"></a>
+					</li>
+					<li class="nav-item">
+						<a href="#"></a>
+					</li>
+					<li class="nav-item">
+						<a href="#"></a>
+					</li>
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a href="index.html"> <b>Home </b></a>
+						</li>
+						
+						<li class="nav-item">
+							<a href="gallery.html"> <b>Gallery</b></a>
+						</li>
+	
+	
+						<li class="nav-item dropdown">
+							<a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								<b>Catagories</b>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<center>
+									<li> <a class="dropdown-item" href="bestseller.html"><b>Best Seller</b></a></li>
+									<li> <a class="dropdown-item" href="HotDeals.html"><b>Hot Deals</b></a></li>
+									<li><a class="dropdown-item" href="regularspice.html"><b>Regular Spices</b></a></li>
+									<li><a class="dropdown-item" href="newarrival.html"><b>New Arrivals</b></a></li>
+								</center>
+	
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="Aboutus.HTML"><b>About Us</b></a>
+						</li>
+						<li class="nav-item">
+							<a href="contactus.html"><b>Contact Us</b></a>
+						</li>
+						<li class="nav-item">
+							<a href="#"></a>
+						</li>
+						<li class="nav-item">
+							<a href="#"></a>
+						</li>
+						<li class="nav-item">
+							<a href="#"></a>
+						</li>
+						<li class="nav-item">
+							<a href="#"></a>
+						</li>
+						<li class="nav-item">
+							<a href="#"><b></b> </a>
+						</li>
+						<li class="nav-item">
+							<a href="#"><b></b> </a>
+						</li>
+						<li class="nav-item">
+							<a href="#"><b></b> </a>
+						</li>
+						<li class="nav-item">
+							<a href="login.html">login</a>
+						</li>
+						<li class="nav-item">
+							<!-- <a href="#"><i class="fa fa-shopping-cart" style='font-size:24px'></i></a> -->
+						</li>
+	
+	
+	
+						</form>
+			</div>
+		</div>
+		</div>
+	</nav>
+	
+	<div class="page-content">
+		<div class="form-v7-content">
+			<div class="form-left">
+				<img src="images/FLAVORS.png" alt="form">
+				<p class="text-1">Login</p>
+				<p class="text-2">Privaci policy & Term of service</p>
+			</div>
+			<form class="form-detail" action="#" method="post" id="myform">
+				<div class="form-row">
+					<label for="username">USERNAME</label>
+					<input type="text" name="username" id="username" class="input-text" required >
+				</div>
+				<div class="form-row">
+					<label for="your_email">E-MAIL</label>
+					<input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+				</div>
+				<div class="form-row">
+					<label for="password">PASSWORD</label>
+					<input type="password" name="password" id="password" class="input-text" required>
+				</div>
+		
+				<div class="form-row-last">
+					<input type="submit" name="login" id="loginb" class="login" onclick="btnSubmit()" value="login">
+					<p>Or<a href="sign.html">sign</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+ <!-- Site footer -->
+<div class="border-color">
+    <footer class="site-footer">
+
+         <div class="container">
+
+             <div class="row">
+                 <div class="col-sm-12 col-md-6">
+                    <h6>Logo</h6>
+                    <p >
+                        
+                            <img src="img/Black Elegant Hand Teahouse Logo.jpg" class="logo" alt="">
+                      </p> 
+                </div> 
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Categories</h6>
+                    <ul class="footer-links">
+                        <li><a href="regularspice.html">Regular spices</a></li>
+                        <li><a href="HotDeals.html">Hot deals</a></li>
+                        <li><a href="bestseller.html">Best seller</a></li>
+                        <li><a href="newarrival.html">New arrivals</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html"> Home</a></li>
+                        <li><a href="Aboutus.HTML">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href=""> </a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                        <a href="index.html">Flavours</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="whatsapp" href="https://www.whatsapp.com/"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a class="youtube" href="https://www.youtube.com/@partnervlog4217"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</div>
+
+</footer>
+</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script>
+
+// 		// just for the demos, avoids form submit
+
+// 		jQuery.validator.setDefaults({
+// 		  	debug: true,
+// 		  	success:  function(label){
+//         		label.attr('id', 'valid');
+//    		 	},
+// 		});
+// 		$( "#myform" ).validate({
+// 		  	rules: {
+// 			    your_email: {
+// 			      	required: true,
+// 			      	email: true
+// 			    },
+// 			    password: "required",
+// 		    	comfirm_password: {
+// 		      		equalTo: "#password"
+// 		    	}
+// 		  	},
+// 		  	messages: {
+// 		  		username: {
+// 		  			required: "Please enter an username"
+// 		  		},
+// 		  		your_email: {
+// 		  			required: "Please provide an email"
+// 		  		},
+// 		  		password: {
+// 	  				required: "Please provide a password"
+// 		  		},
+		  		
+// 		  	}
+// 		});
+
+	
+//   const loginForm = document.getElementById("form-row");
+// const loginButton = document.getElementById("loginb");
+
+// loginButton.addEventListener("click", (e) => {
+//     e.preventDefault();{
+//         alert("You have successfully logged in.");
+//     }
+// })
+ 
+
+// 	</script>
+
+
+
+
+<div class="alert alert-danger position-fixed top-0 end-0" id="passwordsNoMatchRegister" role="alert"
+        style="display:none;">Message of the Alert</div>
+        <!-- <div class="alert alert-success position-fixed bottom-10 left-50" id="FormSubmitted" role="alert"
+        style="display:none;">Form Submitted Succesfully</div> -->
+
+        <script src="js/jquery.js"></script>
+
+
+    <script>
+        function btnSubmit() {
+            var username = document.getElementById("username").value;
+            var useremail = document.getElementById("your_email").value;
+            // var usermessage = document.getElementById("usermessage").value;
+            var patternUserEmail = /^[A-z._]{3,}$/;
+            var emailPattern = /^[A-z._]{3,15}[0-9]{0,6}@[A-z]{3,6}.[A-z]{2,4}$/;
+            var testUsername = patternUserEmail.test(username);
+            var testEmailPattern = emailPattern.test(your_email);
+
+            if (username == "") {
+
+                // alert("Enter your name");
+                $('#passwordsNoMatchRegister').fadeIn(1000);
+                $('#passwordsNoMatchRegister').html("Enter Your Name");
+                setTimeout(function () {
+                    $('#passwordsNoMatchRegister').fadeOut(1000);
+                    setTimeout(() => {
+                $('#passwordsNoMatchRegister').hide();
+                    }, 4000);
+                }, 3000);
+
+            }
+            else if (testUsername == false) {
+                $('#passwordsNoMatchRegister').fadeIn(1000);
+                $('#passwordsNoMatchRegister').html("Enter Your Valid Username ! ");
+                setTimeout(function () {
+                    $('#passwordsNoMatchRegister').fadeOut(1000);
+                    setTimeout(() => {
+                $('#passwordsNoMatchRegister').hide();
+                    }, 4000);
+                }, 3000);
+
+            }
+            else if (useremail == "") {
+                $('#passwordsNoMatchRegister').fadeIn(1000);
+                $('#passwordsNoMatchRegister').html("Enter Your Email ! ");
+                setTimeout(function () {
+                    $('#passwordsNoMatchRegister').fadeOut(1000);
+                    setTimeout(() => {
+                $('#passwordsNoMatchRegister').hide();
+                    }, 4000);
+                }, 3000);
+            }
+            else if (testEmailPattern == false) {
+                $('#passwordsNoMatchRegister').fadeIn(1000);
+                $('#passwordsNoMatchRegister').html("Enter Your Valid Email ! ");
+                setTimeout(function () {
+                    $('#passwordsNoMatchRegister').fadeOut(1000);
+                    setTimeout(() => {
+                $('#passwordsNoMatchRegister').hide();
+                    }, 4000);
+                }, 3000);
+            }
+            // else if (usermessage == "") {
+            //     $('#passwordsNoMatchRegister').fadeIn(1000);
+            //     $('#passwordsNoMatchRegister').html("Enter Your Message  ! ");
+            //     setTimeout(function () {
+            //         $('#passwordsNoMatchRegister').fadeOut(1000);
+            //         setTimeout(() => {
+            //     $('#passwordsNoMatchRegister').hide();
+            //         }, 4000);
+            //     }, 3000);
+            // }
+
+            else {
+                alert("loginb")
+               
+            }
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+</body>
+</html>
